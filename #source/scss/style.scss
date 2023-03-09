@@ -1,0 +1,86 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+.comments {
+
+	&__container {
+		max-width: 1000px;
+		margin: 0 auto;
+		
+	}
+
+	&__list {
+		background-color: #8c746c;
+	}
+
+	&__add {
+		width: 550px;
+		height: 225px;
+		margin: 0 auto;
+	}
+}
+.column {
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.add {
+	background: #bbc4c8;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+
+	&__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__comment {
+		height: 100px;
+		font-size: 16px;
+		resize: none;
+		padding: 5px;
+	}
+
+	&__name {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+
+	&__input-name {
+		height: 25px;
+		width: 250px;
+		padding: 5px;
+		font-size: 16px;
+	}
+
+	&__date {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+
+	&__input-date {
+		height: 25px;
+		width: 120px;
+		padding: 5px;
+		font-size: 16px;
+	}
+
+	&__send {
+		background-color: #8c746c;
+		color: white;
+		font-size: 16px;		
+
+		width: 130px;
+		height: 25px;
+		margin-top: 21px;
+	}
+}
+
+
+

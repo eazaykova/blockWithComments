@@ -2,12 +2,39 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Block with comments</title>
 </head>
 
 <body>
+	<div class="comments">
+		<div class="comments__container">
+			<div class="comments__list"></div>
+			<div class="comments__add add">
+				<label class="add__title">Ваш комментарий *:</label>
+				<textarea class="add__comment" required></textarea>
+				<div class="add__column column">
+					<div class="column__list">
+						<label class="add__name" required>Имя *:</label>
+						<input type="text" class="add__input-name">
+					</div>
+
+					<div class="column__list">
+						<label class="add__date">Дата:</label>
+						<input type="date" class="add__input-date">
+					</div>
+					<div class="column__list">
+						<button class="add__send">Отправить</button>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 </body>
 

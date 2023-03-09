@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*--------------------*/
+.comments__container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.comments__list {
+  background-color: #8c746c; }
+
+.comments__add {
+  width: 550px;
+  height: 225px;
+  margin: 0 auto; }
+
+.column {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .column__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.add {
+  background: #bbc4c8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 15px; }
+  .add__title {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .add__comment {
+    height: 100px;
+    font-size: 16px;
+    resize: none;
+    padding: 5px; }
+  .add__name {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .add__input-name {
+    height: 25px;
+    width: 250px;
+    padding: 5px;
+    font-size: 16px; }
+  .add__date {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .add__input-date {
+    height: 25px;
+    width: 120px;
+    padding: 5px;
+    font-size: 16px; }
+  .add__send {
+    background-color: #8c746c;
+    color: white;
+    font-size: 16px;
+    width: 130px;
+    height: 25px;
+    margin-top: 21px; }
