@@ -46,6 +46,15 @@ function adding_class(elem, error) {
 const form = document.getElementById('form');
 form.addEventListener('submit', getFormValue);
 
+form.addEventListener('keyup', function (event) {
+	if (event.code === 'Enter') {
+		getFormValue();
+	}
+});
+
+
+
+
 function getFormValue(event) {
 	event.preventDefault();
 
