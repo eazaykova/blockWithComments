@@ -11,31 +11,34 @@
 <body>
 	<div class="comments">
 		<div class="comments__container">
-			<div class="comments__list"></div>
-			<div class="comments__add add">
-				<label class="add__title">Ваш комментарий *:</label>
-				<textarea class="add__comment" required></textarea>
-				<div class="add__column column">
-					<div class="column__list">
-						<label class="add__name" required>Имя *:</label>
-						<input type="text" class="add__input-name">
+			<form action="#" method="#" id="form">
+				<div class="comments__add add">
+					<div class="add__comment">
+						<label class="add__title">Ваш комментарий <span>*</span>:</label>
+						<textarea id="text" class="add__text"></textarea>
+						<div id="error__text" class="error"></div>
 					</div>
-
-					<div class="column__list">
-						<label class="add__date">Дата:</label>
-						<input type="date" class="add__input-date">
+					<div class="add__column column">
+						<div class="column__list">
+							<label class="add__name">Имя <span>*</span>:</label>
+							<input id="name" type="text" class="add__input-name">
+						</div>
+						<div class="column__list">
+							<label class="add__date">Дата:</label>
+							<input id="date" type="date" class="add__input-date">
+						</div>
+						<div class="column__list">
+							<input id="submit_send" type="submit" class="add__send" value="Отправить" disabled>
+						</div>
 					</div>
-					<div class="column__list">
-						<button class="add__send">Отправить</button>
-
-					</div>
-
+					<div id="error__name" class="error"></div>
 				</div>
-
+			</form>
+			<div id="listCom" class="comments__list list">
 			</div>
 		</div>
 	</div>
-
+	<script src="js/main.js"></script>
 </body>
 
 </html>
