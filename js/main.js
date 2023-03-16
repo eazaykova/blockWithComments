@@ -34,7 +34,8 @@ function input_validation(elem, elem2, error) {
 }
 
 function adding_class(elem, error) {
-	if (!elem.value) {
+	if (!elem.value || elem.value.search(/ /) == 0) {
+		elem.value = '';
 		elem.classList.add('invalid');
 		error.innerHTML = 'ОШИБКА! Поле не может быть пустым.';
 		error.style.display = "block";
@@ -51,9 +52,6 @@ form.addEventListener('keyup', function (event) {
 		getFormValue();
 	}
 });
-
-
-
 
 function getFormValue(event) {
 	event.preventDefault();
@@ -103,7 +101,7 @@ function createBlock(data, dateNow, dateYesterday) {
 
 	let labelName = document.createElement('label');
 	labelName.classList.add('list__name-user');
-	labelName.innerHTML = data['name'];
+	labelName.textContent = data['name'];
 
 	let labelDate = document.createElement('label');
 	labelDate.classList.add('list__date');
@@ -122,7 +120,7 @@ function createBlock(data, dateNow, dateYesterday) {
 
 	let textTA = document.createElement('div');
 	textTA.classList.add('list__text');
-	textTA.innerHTML = data['text'];
+	textTA.textContent = data['text'];
 
 	let columnList = document.createElement('div');
 	columnList.classList.add('list__column');
